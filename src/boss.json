@@ -1,0 +1,11 @@
+{
+	"name": "GetCardPayApi",
+	"description": "Api para transacoes locais tef e pix",
+	"version": "1.0.0",
+	"homepage": "tefbr.com.br",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^3.1.9"
+	}
+}

@@ -401,8 +401,6 @@ begin
     IniFile := TIniFile.Create(ScopeIniPath);
 
     try
-      // Procura por seção no formato [XXXXXXXXX] onde os primeiros 4 dígitos são empresa e os últimos 4 são filial
-      // No exemplo: [11030001] -> Empresa=1103, Filial=0001
       SectionName := '';
 
       // Vamos procurar pela primeira seção que tenha 8 dígitos (formato empresa+filial)
@@ -470,12 +468,12 @@ begin
     end;
 
     // Testa conectividade antes de tentar abrir
-    if not TestScopeConnection then
-    begin
-      WriteLn('[OPEN_CONFIG] Falha no teste de conectividade');
-      Result := -997;
-      Exit;
-    end;
+//    if not TestScopeConnection then
+//    begin
+//      WriteLn('[OPEN_CONFIG] Falha no teste de conectividade');
+//      Result := -997;
+//      Exit;
+//    end;
 
     // Verifica se a DLL está carregada
     if not IsScopeLoaded then

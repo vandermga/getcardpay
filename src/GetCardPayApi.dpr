@@ -437,7 +437,7 @@ begin
           end;
 
           Body := Req.Body;
-          Valor := '10000'; // R$ 100,00 padrão
+          Valor := '100'; // R$ 100,00 padrão
           TxServico := '0';  // sem taxa padrão
 
           // Extrai valor do JSON

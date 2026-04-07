@@ -428,8 +428,8 @@ begin
       // Extrai empresa e filial do nome da seção
       ScopeConfiguration.Empresa := Copy(SectionName, 1, 4);
       ScopeConfiguration.Filial := Copy(SectionName, 5, 4);
-      ScopeConfiguration.PDV := Copy(SectionName, 1, 3);
-      //ScopeConfiguration.PDV := '001'; // PDV padrão
+      //ScopeConfiguration.PDV := Copy(SectionName, 1, 3);
+      ScopeConfiguration.PDV := '026'; // PDV padrão
 
       // Lê configurações da seção
       ScopeConfiguration.Name := IniFile.ReadString(SectionName, 'Name', '');
